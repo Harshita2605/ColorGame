@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head> 
+    <title> ColorGame </title>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+
+<body onload="newGame()">
+    <div id="header">
+        <h2> The Next Great </h2>
+        <h1> Color Tile Game </h1>
+        <p> Click on the tile whose color matches the sidebar to gain points! </p>
+    </div>
+
+    <div id="toolbar">
+        <div class="tool" id="new"> New Game </div>
+        <div class="tool" id="round"> Rounds = 0 </div>
+        <div class="tool" id="score"> Score = 0 </div>
+        
+        <div class="tool" id="end"> Stats </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+              <span class="close"> &times; </span>
+              <h2> Game Stats </h2>
+            </div>
+            <div class="modal-body" id="stats"> 
+                Rounds Played = 0 <br>Correct Attempts = 0 <br>Incorrect Attempts = 0 <br>Score = 0
+            </div>
+            <div class="modal-footer">
+              <h5> Well Played! <br> Click on the cross button to start a new game <br> Click anywhere else to continue </h5>
+            </div>
+          </div>     
+      </div>
+
+    <div id="main">
+        <div id="sidebar"></div>
+        <div class="t" id="t1"></div>
+        <div class="t" id="t2"></div>
+        <div class="t" id="t3"></div>
+        <div class="t" id="t4"></div>
+        <div class="t" id="t5"></div>
+        <div class="t" id="t6"></div>
+        <div class="t" id="t7"></div>
+        <div class="t" id="t8"></div>
+        <div class="t" id="t9"></div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
